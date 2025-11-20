@@ -1,0 +1,28 @@
+package training.g2.dto.request.Product;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ProductReqDTO {
+    private String name;
+    private String code;
+    private String description;
+    private List<String> imgURL;
+    private Category category;
+
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class Category {
+        private long id;
+
+    }
+
+}
